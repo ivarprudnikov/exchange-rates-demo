@@ -1,0 +1,14 @@
+^tmp
+^precompiled
+^test-result
+^logs
+^eclipse
+^data
+^lib
+.*\.log$
+\.classpath$
+\.project$
+\.settings
+.*\.pyc$
+.*\.orig$
+.*\.swp$
