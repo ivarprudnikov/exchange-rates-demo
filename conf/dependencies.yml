@@ -1,0 +1,8 @@
+# Application dependencies
+
+require:
+    - play
+    - com.netflix.astyanax -> astyanax-core 2.0.2
+    - com.netflix.astyanax -> astyanax-thrift 2.0.2
+    - com.netflix.astyanax -> astyanax-cassandra 2.0.2
+    - com.typesafe.akka -> akka-actor_2.10 2.1.0

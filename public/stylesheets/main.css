@@ -1,0 +1,46 @@
+body{ padding-top:50px }
+
+.splash {
+	padding: 100px 0 50px;
+	background-color: #141d27;
+	background-image: url(../images/currency-mixture.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.splash h1 {
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+
+path.line {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1px;
+}
+
+path.area {
+  fill: #e7e7e7;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis line, .x.axis path,
+.y.axis line, .y.axis path {
+  fill: none;
+  stroke: #000;
+}

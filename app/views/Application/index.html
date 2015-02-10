@@ -1,0 +1,42 @@
+#{extends 'main.html' /} #{set title:'Home' /}
+
+
+<div class="splash">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>ECB: Euro exchange rates</h1>
+			</div>
+		</div>
+		
+		<noscript>
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Javascript has to be turned on</h2>
+				</div>
+			</div>
+		</noscript>
+		
+		
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5">
+				<select id="currencySelector" class="form-control">
+					<option>loading currencies ...</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="currencyGraph"></div>
+		</div>
+	</div>
+</div>
+
+
+
+

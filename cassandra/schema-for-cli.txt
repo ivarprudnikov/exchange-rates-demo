@@ -1,0 +1,24 @@
+/*
+  https://github.com/riptano/brisk/blob/master/resources/cassandra/conf/schema-sample.txt
+  This file contains an example Keyspace that can be created using the
+  cassandra-cli command line interface as follows:
+  bin/cassandra-cli -host localhost --file pathToThisFile/schema-for-cli.txt
+  Assuming that cassandra node is started on localhost
+*/
+
+create keyspace CurrencyRatesSpace
+  with placement_strategy = 'org.apache.cassandra.locator.SimpleStrategy'
+  and strategy_options = {replication_factor:1};
+
+use CurrencyRatesSpace;
+
+create column family CurrencyRates
+  with comparator = UTF8Type
+  and key_validation_class=UTF8Type
+  and column_metadata = [
+    {column_name: time, validation_class: UTF8Type, index_type: KEYS}
+    {column_name: currency, validation_class: UTF8Type}
+    {column_name: rate, validation_class: UTF8Type}
+  ]
+  and comment = 'A column family where currency rates are stored';
+  
